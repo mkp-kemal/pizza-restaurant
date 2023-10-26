@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle">
+        <item name="android:background">@drawable/custom_spinner_background</item>
+        <item name="android:textColor">@color/custom_text_color</item>
+    </style>
+
+</resources>

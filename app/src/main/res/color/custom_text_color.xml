@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Warna teks normal -->
+    <item android:state_enabled="true" android:state_pressed="false" android:color="#733f0e" />
+
+    <!-- Warna teks saat dipilih -->
+    <item android:state_enabled="true" android:state_pressed="true" android:color="#850909" />
+
+    <!-- Warna teks saat dinonaktifkan -->
+    <item android:state_enabled="false" android:color="#8E8E8E" />
+</selector>
