@@ -12,7 +12,7 @@ import android.widget.TextView
 class OrderDetail : AppCompatActivity() {
     val EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE"
     val EXTRA_MESSAGE_STORE = "com.example.android.twoactivities.extra.MESSAGE2"
-    val EXTRA_REPLY = "com.example.android.twoactivities.extra.REPLY"
+    val EXTRA_TITLE = "com.example.android.twoactivities.extra.TITLE"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order_detail)
@@ -28,7 +28,12 @@ class OrderDetail : AppCompatActivity() {
         val textView2 = findViewById<TextView>(R.id.order_store)
         textView2.text = message2
 
-        val kalimat = "Terima kasih $message sudah memesan di toko kami, pesanan Pepperoni Pizza anda dikirim menggunakan Fast Delivery"
+        val intent3 = intent
+        val message3 = intent3.getStringExtra(EXTRA_TITLE)
+        val textView3 = findViewById<TextView>(R.id.title_final)
+        textView3.text = message3
+
+        val kalimat = "Terima kasih $message sudah memesan di toko kami, pesanan $message3 anda dikirim menggunakan Fast Delivery"
 
         val spannableString = SpannableString(kalimat)
         val startIndex = kalimat.indexOf(message)

@@ -3,6 +3,7 @@ package com.example.pizzarestaurant
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -20,7 +21,7 @@ class CustomAdapter(private val mList:List<ItemsViewModel>): RecyclerView.Adapte
 
 
         // sets the image to the imageview from our itemHolder class
-//        holder.imageView.setImageResource(ItemsViewModel.image)
+        holder.imageView.setImageResource(ItemsViewModel.img_menus)
 
 
         // sets the text to the textview from our itemHolder class
@@ -38,7 +39,7 @@ class CustomAdapter(private val mList:List<ItemsViewModel>): RecyclerView.Adapte
 
 
     class ViewHolder(ItemView: View): RecyclerView.ViewHolder(ItemView) {
-        //        val imageView: ImageView = itemView.findViewById(R.id.imageview)
+        val imageView: ImageView = itemView.findViewById(R.id.img_menus)
         val textView: TextView = itemView.findViewById(R.id.tv_title_menu)
         val textViewNIm: TextView = itemView.findViewById(R.id.tv_description_menu)
     }

@@ -14,7 +14,8 @@
                 </shape>
             </item>
             <item android:right="10dp">
-                <bitmap android:gravity="center|end" android:src="@drawable/arrow_dropdown"/>
+                <bitmap android:gravity="center|end"
+                    android:src="@drawable/arrow_dropdown"/>
             </item>
         </layer-list>
     </item>

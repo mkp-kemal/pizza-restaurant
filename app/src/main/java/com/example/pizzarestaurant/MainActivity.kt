@@ -9,6 +9,7 @@ import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RelativeLayout
 import android.widget.Spinner
 import android.widget.TextView
 import androidx.core.content.PackageManagerCompat.LOG_TAG
@@ -35,19 +36,19 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(parentView: AdapterView<*>?, selectedItemView: View?, position: Int, id: Long) {
                 // Saat pilihan diubah, update selectedText
                 selectedText = dropdownItems[position]
-                Log.d("test array", selectedText)
+//                Log.d("test array", selectedText)
             }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
         }
-        Log.d("test array", selectedText)
+//        Log.d("test array", selectedText)
 
 
 
         val name = findViewById<EditText>(R.id.name)
-        val submit = findViewById<Button>(R.id.submit)
+        val submit = findViewById<RelativeLayout>(R.id.submit)
 
         submit?.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, ShopDetail::class.java)
